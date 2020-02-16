@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="starter-template">
+    <h1 align="center">Currency Rate (UAH to USD)</h1>
+</div>
+
+<div class="container">
+    <div class="row"> 
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+        <canvas id="myChart" width="400" height="400">
+            <script>
+                $(document).ready(function(){
+                {% block jquery %}{% endblock %}
+                })
+            </script>
+        </canvas>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div>
+  
+</main><!-- /.container -->
+{% endblock content %}
